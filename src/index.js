@@ -13,9 +13,9 @@ import {
   getOperationAST,
   specifiedRules,
 } from 'graphql';
+import accepts from 'accepts';
 import { version } from '../package.json';
 import renderGraphiQL from './renderGraphiQL';
-import accepts from 'accepts';
 
 
 /**
