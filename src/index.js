@@ -181,7 +181,7 @@ const createResult = async ({
 
       // Otherwise, report a 405: Method Not Allowed error.
       throw Boom.methodNotAllowed(
-        `Can only perform a ${operationAST.operation} operation from a POST request.`
+        `Can only perform a ${operationAST.operation} operation from a POST request.`,
       );
     }
   }
@@ -194,7 +194,7 @@ const createResult = async ({
       rootValue,
       context,
       variables,
-      operationName
+      operationName,
     );
   } catch (contextError) {
     // Return 400: Bad Request if any execution context errors exist.
